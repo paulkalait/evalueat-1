@@ -10,7 +10,7 @@
     color: #333;
   }
   header a {
-    background: -webkit-linear-gradient( #ff4e00 0%, #ec9f05 74%);
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
@@ -31,7 +31,7 @@
   }
   
   button {
-    background: -webkit-linear-gradient( #ff4e00 0%, #ec9f05 74%);
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     border: 0;
     padding: .5%;
     padding-left: 3%;
@@ -44,7 +44,7 @@
    align-items: center;
   }
   #logout{
-    background: -webkit-linear-gradient( #ff4e00 0%, #ec9f05 74%);
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -69,6 +69,7 @@
   textarea:focus, input:focus {
     outline: none;
     border: 2px solid #3486eb;
+    
   }
   #email-login, #password-login, #username-signup, #email-signup, #password-signup{
     border-top: none;
@@ -79,7 +80,7 @@
     font-family: 'Roboto', sans-serif;
     
   }
-  
+
   textarea {
     min-width: 27%;
     min-height: 120px;
@@ -162,9 +163,10 @@
   }
   
   .post .title span {
-    font-style: italic;
+    font-style: normal;
     font-size: 90%;
     color: #7d7d7d;
+    font-weight: normal;
   }
   
   .edit-link {
