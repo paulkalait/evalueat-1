@@ -9,10 +9,22 @@
     font-family: sans-serif;
     color: #333;
   }
+  header a {
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   
+  }
+  header nav a{
+    font-size: 2.5vh;
+  }
+  div a {
+    color: black;
+  }
   a {
     text-decoration: none;
     color: #225ca3;
+    
     font-weight: bold;
     transition: color .1s;
   }
@@ -22,18 +34,27 @@
   }
   
   button {
-    background-color: #225ca3;
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     border: 0;
-    padding: .7%;
+    padding: .5%;
+    padding-left: 3%;
+    padding-right: 3%;
     color: white;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
+   align-items: center;
+  }
+  #logout{
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   button:hover {
     background-color: #3486eb;
+    opacity: 50%;
   }
   
   .post-list {
@@ -42,26 +63,30 @@
   }
   
   textarea, input {
+    
     padding: .5%;
+  
     border: 1px solid #ccc;
   }
   
   textarea:focus, input:focus {
     outline: none;
     border: 2px solid #3486eb;
+    
   }
   #email-login, #password-login, #username-signup, #email-signup, #password-signup{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: lightgrey solid 1px;
+    border-bottom: lightgrey solid 2px;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    
   }
-  
+
   textarea {
     min-width: 27%;
-    min-height: 90px;
+    min-height: 120px;
     margin-top: 1%;
     display: flex;
   }
@@ -103,6 +128,9 @@
   header h1 {
     font-size: 1em;
   }
+  header img{
+    margin-left: 5%;
+  }
   
   main {
     flex: 1;
@@ -141,9 +169,10 @@
   }
   
   .post .title span {
-    font-style: italic;
+    font-style: normal;
     font-size: 90%;
     color: #7d7d7d;
+    font-weight: normal;
   }
   
   .edit-link {
