@@ -24,7 +24,7 @@
   button {
     background-color: #225ca3;
     border: 0;
-    padding: .7%;
+    padding: .7%; 
     color: white;
     font-weight: bold;
     transition: background-color .1s;
