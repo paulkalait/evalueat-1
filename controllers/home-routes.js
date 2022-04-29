@@ -1,6 +1,53 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment} = require('../models');
+const fs = require('fs')
+const multer = require("multer");
+const path = require("path")
+const { findAll } = require('../models/Post');
+
+const upload = multer({
+  dest: "../public/images"
+})
+
+router.post(
+  "/upload",
+  upload.single("image"),
+  (req,res) => {
+    const tempPath = req.file.path;
+    console.log(__dirname)
+    const targetPath = path.join(__dirname, `../public/images/${req.file.originalname}`)
+
+    if(path.extname(req.file.originalname).toLowerCase() === ".png"){
+      fs.rename(tempPath, targetPath, err => {
+        if(err) return handleError(err, res)
+      })
+
+      res.status(200)
+      .contentType("text/plain")
+      .end("File uploaded")
+
+
+
+    }else{
+      fs.unlink(tempPath, err=> {
+        if(err) throw(err)
+
+        res
+        .status(404)
+        .contentType("text/plain"
+        .end("only .png files are allowed!"))
+      })
+    }
+  }
+)
+
+router.get("/image/:image", (req,res) => {
+  // findAll(req.params.)
+  let imageToSearch = req.params;
+  console.log(imageToSearch);
+  res.sendFile(path.join(__dirname, `../public/upload/${imageToSearch.image}`));
+})
 
 // get all posts for homepage
 router.get('/', (req, res) => {
