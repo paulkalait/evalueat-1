@@ -228,3 +228,25 @@
     border-top:lightgrey solid 1px;
     padding: 2px;
   }
+  .container {
+    border: 3px solid #fff;
+    padding: 20px;
+
+  }
+  .login-form {
+    display:flexbox;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+    text-align: center;
+  }
+
+  .signup-form {
+    display: flexbox;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+    text-align: center;
+  }
