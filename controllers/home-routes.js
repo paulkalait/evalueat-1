@@ -14,22 +14,31 @@ router.post(
   "/upload",
   upload.single("image"),
   (req,res) => {
-    console.log(req.body)
+    // console.log(req.body)
     const tempPath = req.file.path;
-    console.log(tempPath)
+    // console.log(tempPath)
     const targetPath = path.join(__dirname, `../public/images/${req.file.originalname}`)
-    console.log(req.file.originalname)
+    // console.log(req.file.originalname)
     if(path.extname(req.file.originalname).toLowerCase() === ".png"){
       fs.rename(tempPath, targetPath, err => {
         console.log(targetPath)
         if(err) return handleError(err, res)
       })
-      console.log(req.body["post-title"])
+      console.log(req.body)
+      console.log(req.file.originalname)
+      
+      console.log({
+        title: req.body["post-title"],
+        post_text: req.body['post-text'],
+        user_id: req.session.user_id,
+        image_name: req.file.originalname
+      })
       Post.create({
         title: req.body["post-title"],
         post_text: req.body['post-text'],
         user_id: req.session.user_id,
         image_name: req.file.originalname
+  
       })
         .then(dbPostData => 
           res.status(200)
@@ -68,6 +77,7 @@ router.get('/', (req, res) => {
       'id',
       'post_text',
       'title',
+      'image_name',
       'created_at',
     ],
     include: [
@@ -109,6 +119,7 @@ router.get('/post/:id', (req, res) => {
       'id',
       'post_text',
       'title',
+      'image_name',
       'created_at',
       // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],

@@ -22,7 +22,7 @@ Post.init(
     },
     image_name: {
      type: DataTypes.STRING,
-     allowNull: true
+     allowNull: false
     },
     user_id: {
       type: DataTypes.INTEGER,
