@@ -33,7 +33,7 @@
     color: #3486eb;
   }
   
-  button {
+  .btn {
     background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     border: 0;
     padding: .5%;
@@ -52,7 +52,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  button:hover {
+  .btn:hover {
     background-color: #3486eb;
     opacity: 50%;
   }
@@ -188,6 +188,20 @@
   .upvote-btn:hover {
     background-color: #1f9c13;
   } */
+
+  /* STYLE FOR BUTTON */
+  .custom-file-upload {
+    border: none;
+    display: inline-block;
+    padding: 1px 5px;
+   
+    /* margin-bottom: 1%; */
+    cursor: pointer;
+    font-weight: bolder;
+}
+input[type="file"] {
+  display: none;
+}
   
   .comment-form {
     margin-bottom: 5%;
