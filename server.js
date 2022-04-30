@@ -5,17 +5,6 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const c = require('ansi-colors');
 
-// const storage= multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, '../images')
-//   },
-//   filename: (req, file, cb) => {
-//     console.log(file)
-//     cb(null, Date.now() + path.extname(file.originalname))
-//   }
-// })
-
-// const upload = multer({storage: storage})
 const app = express();
 const PORT = process.env.PORT || 3001;
 
