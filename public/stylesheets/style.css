@@ -234,8 +234,10 @@ input[type="file"] {
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
-    padding: 1%;
+    padding: 3%;
     font-size: 110%;
+    background-color: rgb(219, 161, 161);
+
   }
 
   .title{
@@ -262,8 +264,8 @@ input[type="file"] {
 }
   .signup-form {
     flex: 1;
-    background-color: rgb(221, 135, 135);
-    border: 5px solid black;
+    background-color: lightgrey;
+    border: 5px solid rgb(221, 135, 135);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -279,6 +281,16 @@ input[type="file"] {
   button {
     font-size: 24px;
   }
- 
+
+  .footer-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+  }
+ .homepage, .login, .logout{
+   flex: 1;
+ }
     
    
