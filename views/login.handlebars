@@ -1,9 +1,10 @@
-<form class="login-form">
-  <div>
-    {{!-- <label for="email-login">email:</label> --}}
+<div class = "form-container container">
+  <div class ="login-form">
+  <form>
+    <div>    {{!-- <label for="email-login">email:</label> --}}
     <input type="text" id="email-login" placeholder="Email" />
-  </div>
-  <div>
+    </div>
+    <div>
     {{!-- <label for="password-login">password:</label> --}}
     <input type="password" id="password-login" placeholder="Password" />
   </div>
@@ -11,10 +12,11 @@
     <button type="submit">login</button>
   </div>
 </form>
+</div>
 
-<form class="signup-form">
+<div class ="signup-form">
+<form>
   <div>
-   
     {{!-- <label for="username-signup">username:</label> --}}
     <input type="text" id="username-signup" placeholder="Username"/>
   </div>
@@ -30,5 +32,7 @@
     <button type="submit">signup</button>
   </div>
 </form>
+</div>
+</div>
 
 <script src="/javascript/login.js"></script>

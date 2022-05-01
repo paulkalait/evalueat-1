@@ -242,3 +242,30 @@ input[type="file"] {
     border-top:lightgrey solid 1px;
     padding: 2px;
   }
+
+.form-container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space space-between;
+}
+.login-form {
+  flex: 1;
+  background-color: rgb(221, 135, 135);
+  border: 5px solid black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+  .signup-form {
+    flex: 1;
+    background-color: rgb(221, 135, 135);
+    border: 5px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+  }
+ 
+    
+   
