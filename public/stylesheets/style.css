@@ -85,7 +85,7 @@
   }
 
   textarea {
-    min-width: 27%;
+    min-width: 400px;
     min-height: 120px;
     margin-top: 1%;
     display: flex;
@@ -170,7 +170,7 @@
   
   .post .title span {
     font-style: normal;
-    font-size: 90%;
+    font-size: 80%;
     color: #7d7d7d;
     font-weight: normal;
   }
