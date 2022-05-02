@@ -9,31 +9,57 @@
     font-family: sans-serif;
     color: #333;
   }
+  header a {
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   
+  }
+  header nav a{
+    font-size: 2.5vh;
+  }
+  div a {
+    color: black;
+  }
   a {
-    text-decoration: none;
-    color: #225ca3;
+    text-decoration: none; 
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: orangered;
+  }
+  span:hover{
+    text-decoration: none;
   }
   
-  button {
-    background-color: #225ca3;
+  .btn {
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     border: 0;
+<<<<<<< HEAD
     padding: .7%; 
+=======
+    padding: .5%;
+    padding-left: 3%;
+    padding-right: 3%;
+>>>>>>> 4859ecde7d7d73759cd72c4511354a8f112fc117
     color: white;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
+   align-items: center;
+  }
+  #logout{
+    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
-  button:hover {
+  .btn:hover {
     background-color: #3486eb;
+    opacity: 50%;
   }
   
   .post-list {
@@ -42,26 +68,30 @@
   }
   
   textarea, input {
+    
     padding: .5%;
+  
     border: 1px solid #ccc;
   }
   
   textarea:focus, input:focus {
     outline: none;
     border: 2px solid #3486eb;
+    
   }
   #email-login, #password-login, #username-signup, #email-signup, #password-signup{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: lightgrey solid 1px;
+    border-bottom: lightgrey solid 2px;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    
   }
-  
+
   textarea {
-    min-width: 27%;
-    min-height: 90px;
+    min-width: 400px;
+    min-height: 120px;
     margin-top: 1%;
     display: flex;
   }
@@ -77,7 +107,7 @@
   .wrapper {
     width: 100%;
     min-height: 100%;
-    max-width: 1200px;
+    max-width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -102,6 +132,9 @@
   
   header h1 {
     font-size: 1em;
+  }
+  header img{
+    margin-left: 5%;
   }
   
   main {
@@ -141,9 +174,10 @@
   }
   
   .post .title span {
-    font-style: italic;
-    font-size: 90%;
+    font-style: normal;
+    font-size: 80%;
     color: #7d7d7d;
+    font-weight: normal;
   }
   
   .edit-link {
@@ -159,6 +193,20 @@
   .upvote-btn:hover {
     background-color: #1f9c13;
   } */
+
+  /* STYLE FOR BUTTON */
+  .custom-file-upload {
+    border: none;
+    display: inline-block;
+    padding: 1px 5px;
+   
+    /* margin-bottom: 1%; */
+    cursor: pointer;
+    font-weight: bolder;
+}
+input[type="file"] {
+  display: none;
+}
   
   .comment-form {
     margin-bottom: 5%;
@@ -194,8 +242,57 @@
     padding: 1%;
     font-size: 110%;
   }
+ 
+  article{
+    border-top:lightgrey solid 1.3px;
+    border-spacing: 2px;
+    border-image: linear-gradient(to right, rgb(230, 174, 22), rgba(255, 81, 0, 0.938)) 1;
+    
+  }
+  .form-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .login-form{
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
 
-  .title{
-    border-top:lightgrey solid 1px;
-    padding: 2px;
+  .imgdiv{
+  width: 100%;
+   height:400px;
+  }
+
+  /* mobile responsiveness */
+  @media screen and (max-width: 850px) {
+  
+    .wrapper{
+      max-width:100%;
+    }
+    .title{
+      width:100%;
+    }
+   textarea{
+     min-width:100%;
+   }
+   #add-comment{
+     width: 100%;
+     padding: 2% 2%;
+   }
+   span{
+     width: 100%;
+   }
+   header nav a{
+     font-size: 2.00vh;
+   }
+   .imgdiv{
+     height: 300px;
+   }
+   #postbtn{
+     width: 100%;
+     padding: 1.5% 1.5%;
+     border-radius: 5%;
+   }
   }
