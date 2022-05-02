@@ -4,55 +4,55 @@ const postdata = [
   {
     title: 'Donec posuere metus vitae ipsum.',
    post_text: 'Donec posuere metus vitae ipsum. Donec posuere metus vitae ipsum. Donec posuere metus vitae ipsum. Donec posuere metus vitae ipsum.',
-   image_name:'image.png',
+   post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
     user_id: 9
   },
   {
     title: 'Morbi non quam nec dui luctus rutrum.',
    post_text: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-   image_name:'image.png',
+   post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
    user_id: 8
   },
   {
     title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
    post_text: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-   image_name:'image.png',
+   post_url:'',
    user_id: 1
   },
   {
     title: 'Nunc purus.',
    post_text: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-   image_name:'image.png',
+   post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
    user_id: 4
   },
   {
     title: 'Pellentesque eget nunc.',
    post_text: 'Pellentesque eget nunc.Pellentesque eget nunc.Pellentesque eget nunc.Pellentesque eget nunc.',
-   image_name:'image.png',
+   post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
    user_id: 7
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
    post_text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-   image_name:'image.png',
+   post_url:'',
    user_id: 4
   },
   {
     title: 'In hac habitasse platea dictumst.',
    post_text: 'In hac habitasse platea dictumst.In hac habitasse platea dictumst.In hac habitasse platea dictumst.In hac habitasse platea dictumst.In hac habitasse platea dictumst.',
-   image_name:'image.png',
+   post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
    user_id: 1
   },
   {
     title: 'Morbi non quam nec dui luctus rutrum.',
     post_text: 'Morbi non quam nec dui luctus rutrum.Morbi non quam nec dui luctus rutrum.Morbi non quam nec dui luctus rutrum.Morbi non quam nec dui luctus rutrum.Morbi non quam nec dui luctus rutrum.',
-    image_name:'image.png',
+    post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
     user_id: 1
   },
   {
     title: 'Duis ac nibh.',
     post_text: 'Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.Duis ac nibh.',
-    image_name:'image.png',
+    post_url:'https://www.youtube.com/watch?v=MXxX6Ee95gQ',
     user_id: 9
   }
 ];
