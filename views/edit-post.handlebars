@@ -5,7 +5,10 @@
   </h2>
   <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
+      <input id="post-title" name="post-title" type="text" value="{{post.title}}" />
+       <div id="urlbox">
+        <input type="text" id="url-title" name="url-title" placeholder="Insert Url" value="{{post.post_url}}" />
+    </div>
       <textarea id="edit-postext">({{post.post_text}})</textarea>
     </div>
     <div>

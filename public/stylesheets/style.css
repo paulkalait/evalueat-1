@@ -191,6 +191,9 @@
     font-weight: normal;
     font-family:'Fjalla One', sans-serif;
   }
+  #post-title{
+    width: 35%;
+  }
   #post-title,a {
     font-family:'Fjalla One', sans-serif;
   }
@@ -300,6 +303,7 @@ input[type="file"] {
   }
   #url-title{
     font-family:'Fjalla One', sans-serif;
+    width: 35%;
   }
   #post-text{
     font-family:'Fjalla One', sans-serif;
