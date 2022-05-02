@@ -4,7 +4,7 @@
   {{!-- second formn for image --}}
   <form method="POST" action="/upload" enctype="multipart/form-data">
    <div>
-      <label for="post-title">Title:</label>
+      <label id="post-title" for="post-title">Title:</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
 
@@ -18,7 +18,7 @@
       <img id="output" style="width:100%; object-fit: cover"src="../images/{{image_name}}"/>
     </div>
     <div>
-      <label for="post-text">Text:</label>
+      <label id="post-text" for="post-text">Text:</label>
       <textarea name="post-text" id="post-text" cols="30" rows="10" placeholder="Say Anything..."></textarea>
     </div>
     

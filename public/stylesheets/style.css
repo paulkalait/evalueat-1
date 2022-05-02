@@ -261,6 +261,9 @@ input[type="file"] {
    height:400px;
   }
 
+  #post-title, #post-text{
+    font-weight: bold;
+  }
   /* mobile responsiveness */
   @media screen and (max-width: 850px) {
   
