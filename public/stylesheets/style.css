@@ -284,6 +284,7 @@ input[type="file"] {
  
   article{
     border-top:lightgrey solid 2.00px;
+    padding-top: 5%;
     border-spacing: 3px;
     border-image: linear-gradient(to right, #caf0f8, #fec5bb) 1;
     
@@ -301,9 +302,11 @@ input[type="file"] {
   #urlbox{
     margin-bottom: 1%;
   }
-  #url-title{
+  #url-title, #post-title{
     font-family:'Fjalla One', sans-serif;
     width: 35%;
+    border: 1.5px solid #505050;
+    border-radius: 5%;
   }
   #post-text{
     font-family:'Fjalla One', sans-serif;
@@ -316,6 +319,9 @@ input[type="file"] {
 .new-post-form input{
   border: 1.5px solid #505050;
   border-radius: 5%;;
+}
+#back-to-dashboard{
+  padding-top: 2%;
 }
   /* mobile responsiveness */
   @media screen and (max-width: 850px) {
@@ -351,7 +357,9 @@ input[type="file"] {
    .new-post-form input{
      width: 100%;
    }
-   #url-title{
-     margin-bottom: 2%;
+   #url-title, #post-title{
+     padding:5px;
+     width:100%;
+     margin-bottom: 3%;
    }
   }
