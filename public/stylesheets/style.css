@@ -37,13 +37,10 @@
   .btn {
     background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
     border: 0;
-<<<<<<< HEAD
     padding: .7%; 
-=======
     padding: .5%;
     padding-left: 3%;
     padding-right: 3%;
->>>>>>> 4859ecde7d7d73759cd72c4511354a8f112fc117
     color: white;
     font-weight: bold;
     transition: background-color .1s;
@@ -79,7 +76,19 @@
     border: 2px solid #3486eb;
     
   }
+
+  form {
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+  }
+
   #email-login, #password-login, #username-signup, #email-signup, #password-signup{
+
     border-top: none;
     border-left: none;
     border-right: none;
@@ -250,12 +259,15 @@ input[type="file"] {
     
   }
   .form-container{
+  
+    padding-top: 20%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
   }
-  .login-form{
+  .login-form, .signup-form{
+    
     margin-bottom: 10%;
     margin-top: 5%;
   }
