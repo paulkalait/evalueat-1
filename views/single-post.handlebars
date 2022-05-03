@@ -2,17 +2,8 @@
 
 {{#if loggedIn}}
 <form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button id="add-comment" class="btn" type="submit">add comment</button>
-  </div>
-
-  {{!-- share added 04/25 --}}
-  <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"><i class="fa fa-facebook-square" style="font-size:28px"></i></a>
-<a onclick="Share.twitter('URL','TITLE')"><i class="fa fa-twitter-square" style="font-size:28px"></i></a>
+   <a id="fb-icon" onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"><i class="fa-brands fa-facebook"></i></i></a>
+<a id="twitter-icon" onclick="Share.twitter('URL','TITLE')"><i class="fa-brands fa-twitter"></i></i></a>
 
 <a href="http://www.facebook.com/sharer/sharer.php?s=100&
 p%5Btitle%5D=TITLE&p%5Bsummary%5D=DESC&p%5Burl%5D=
@@ -20,6 +11,16 @@ URL&p%5Bimages%5D%5B0%5D=IMG_PATH" target="_blank" onclick="return Share.me(this
 <a href="https://twitter.com/intent/tweet?original_referer=
 http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=TITLE&url
 =URL" target="_blank" onclick="return Share.me(this)"></a>
+  <div>
+    <textarea name="comment-body" style="margin-top: 3%;"></textarea>
+  </div>
+
+  <div>
+    <button id="add-comment" class="btn" type="submit">add comment</button>
+  </div>
+
+  {{!-- share added 04/25 --}}
+ 
 {{!-- sharing ends --}}
 
 </form>

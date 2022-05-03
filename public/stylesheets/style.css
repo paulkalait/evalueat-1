@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fec5bb ;
+  --secondary-color: #fcd5ce;
+  --tertiary-color: #caf0f8;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -10,7 +16,7 @@
     color: #333;
   }
   header a {
-    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    background: var(--primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
@@ -28,14 +34,18 @@
   }
   
   a:hover {
-    color: orangered;
+    color: var(--secondary-color);
+  }
+  span{
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   span:hover{
     text-decoration: none;
   }
   
   .btn {
-    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    background: -webkit-linear-gradient(#fae1dd , #fec5bb );
     border: 0;
     padding: .5%;
     padding-left: 3%;
@@ -48,11 +58,12 @@
    align-items: center;
   }
   #logout{
-    background: -webkit-linear-gradient( #ff4e00 0%, #FF4500 74%);
+    background: var(--primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family:'Fjalla One', sans-serif;
   }
-  
+ 
   .btn:hover {
     background-color: #3486eb;
     opacity: 50%;
@@ -86,10 +97,12 @@
   }
 
   textarea {
-    min-width: 400px;
+    min-width: 35%;
     min-height: 120px;
     margin-top: 1%;
     display: flex;
+    border: 2px solid #505050;
+    border-radius: 5%
   }
   
   form > div {
@@ -132,7 +145,9 @@
   header img{
     margin-left: 5%;
   }
-  
+  section h2{
+    font-family:'Fjalla One', sans-serif;
+  }
   main {
     flex: 1;
     padding: 2% 4%;
@@ -174,6 +189,13 @@
     font-size: 80%;
     color: #7d7d7d;
     font-weight: normal;
+    font-family:'Fjalla One', sans-serif;
+  }
+  #post-title{
+    width: 35%;
+  }
+  #post-title,a {
+    font-family:'Fjalla One', sans-serif;
   }
   
   .edit-link {
@@ -181,6 +203,22 @@
     margin: -1.5% 0 2% 0;
   }
   
+  #twitter-icon{
+    font-size: 18px;
+  }
+  #twitter-icon:hover{
+    font-size: 21px;
+    transition: .4s;
+  }
+  #fb-icon{
+    font-size: 18px;
+    margin-right: .8%;
+  }
+  #fb-icon:hover{
+    font-size: 21px;
+    transition: .4s;
+    
+  }
   /* .upvote-btn {
     background-color: #197d0f;
     transition: background-color .1s;
@@ -214,17 +252,22 @@ input[type="file"] {
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #fcd5ce;
   }
   
   .comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
+    margin-top: .5%;
     opacity: .6;
+  }
+
+  #comment-text{
+    margin-top: 3%;
   }
   
   .new-post-form input {
-    width: 300px;
+    width: 35%;
   }
   
   .edit-post-form {
@@ -240,9 +283,10 @@ input[type="file"] {
   }
  
   article{
-    border-top:lightgrey solid 1.3px;
-    border-spacing: 2px;
-    border-image: linear-gradient(to right, rgb(230, 174, 22), rgba(255, 81, 0, 0.938)) 1;
+    border-top:lightgrey solid 2.00px;
+    padding-top: 5%;
+    border-spacing: 3px;
+    border-image: linear-gradient(to right, #caf0f8, #fec5bb) 1;
     
   }
   .form-container{
@@ -255,12 +299,30 @@ input[type="file"] {
     margin-bottom: 10%;
     margin-top: 5%;
   }
-
-  .imgdiv{
-  width: 100%;
-   height:400px;
+  #urlbox{
+    margin-bottom: 1%;
   }
-
+  #url-title, #post-title{
+    font-family:'Fjalla One', sans-serif;
+    width: 35%;
+    border: 1.5px solid #505050;
+    border-radius: 5%;
+  }
+  #post-text{
+    font-family:'Fjalla One', sans-serif;
+    border: 1.5px solid #505050;
+    border-radius: 5%;
+  }
+#postbtn{
+  margin-top: 1%;
+}
+.new-post-form input{
+  border: 1.5px solid #505050;
+  border-radius: 5%;;
+}
+#back-to-dashboard{
+  padding-top: 2%;
+}
   /* mobile responsiveness */
   @media screen and (max-width: 850px) {
   
@@ -289,6 +351,15 @@ input[type="file"] {
    #postbtn{
      width: 100%;
      padding: 1.5% 1.5%;
+     
      border-radius: 5%;
+   }
+   .new-post-form input{
+     width: 100%;
+   }
+   #url-title, #post-title{
+     padding:5px;
+     width:100%;
+     margin-bottom: 3%;
    }
   }

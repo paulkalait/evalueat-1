@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2bd04f5e1d.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -18,14 +21,14 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/"><img src="../images/evaluEAT.png" width="35%"></a>
+        <a href="/"><img src="../images/wearshare.png" width="45%"></a>
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">add post +</span></a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard" id="addpost">add post <i class="fa-solid fa-plus"></i></span></a>
+        <button id="logout" class="btn-no-style">logout  <i class="fa fa-sign-out" style="font-size:14px"></i></button>
         {{else}}
-        | <a href="/login">login</a>
+        | <a href="/login">login <i class="fa-solid fa-right-to-bracket" style="font-size:20px"></i></a>
           
         {{/if}}
       </nav>
