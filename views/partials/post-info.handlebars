@@ -1,14 +1,21 @@
-<article class="post" style="padding-bottom: 2%;">
+<article class="post" style="padding-bottom: 1%;">
 </article>
   <div class="title">
-    <a href="/post/{{id}}" style="font-size: 3.5vh;">{{title}}</p>
-    <div class="imgdiv">
- <img id="output" style="width: 100%; height: 100%;  object-fit: cover; padding-bottom:3%" src="../images/{{image_name}}"/>
-    </div>
-   
-    <span style="font-weight:lighter; font-size:2.30vh">{{post_text}}</span>
-  </div>
-  <div class="meta">
+    <a class="post-title" href="/post/{{id}}" style="font-size: 3.5vh;">{{title}}</a>
+    <div>
+    <a class="post-username" href="/post/{{id}}" style="font-size: 2.0vh;">Posted By: {{user.username}}</a>
+     </div>
+     <div>
+       <a href="{{post_url}}" style="font-weight:lighter; font-size:3.00vh; padding-bottom: 1%;" target="_blank">{{format_url post_url}}</a>
+     </div>
+
+      
+       
+    
+    <p style="font-weight:lighter; font-size:3.00vh;">{{post_text}}</p>
+
+  
+  <div class="meta" id="comment-text">
     {{!-- {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
     | --}}
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
