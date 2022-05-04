@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
       'post_text',
       'title',
       'post_url',
+      'image_name',
       'created_at',
     ],
     include: [
@@ -46,6 +47,7 @@ router.get('/:id', (req, res) => {
       'post_text',
       'title',
       'post_url',
+      'image_name',
       'created_at',
     ],
     include: [
@@ -83,6 +85,7 @@ router.post('/', withAuth, (req, res) => {
     title: req.body.title,
     post_text: req.body.post_text,
     post_url: req.body.post_url,
+    image_name: req.file.originalname,
     user_id: req.session.user_id
   })
     .then(dbPostData => res.json(dbPostData))

@@ -27,6 +27,10 @@ Post.init(
         isURL: true
       }
     },
+    image_name: {
+      type: DataTypes.BLOB,
+      allowNull: true
+     },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
