@@ -47,10 +47,10 @@
   .btn {
     background: -webkit-linear-gradient(#fae1dd , #fec5bb );
     border: 0;
-    padding: .7%; 
-    padding: .5%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 1%; 
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
     color: white;
     font-weight: bold;
     transition: background-color .1s;
@@ -88,17 +88,30 @@
     
   }
 
-  form {
+  .form-container{
     padding-top: 20%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    border: 2px solid black;
-    padding: 10px;
+  }
+  .login-form, .signup-form{
+    
+    margin-bottom: 10%;
+    margin-top: 5%;
   }
 
-  #email-login, #password-login, #username-signup, #email-signup, #password-signup{
+  form {
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid lightgrey;
+    padding: 45px 10px 25px;
+  }
+
+  #username-login, #password-login, #username-signup, #email-signup, #password-signup{
 
     border-top: none;
     border-left: none;
@@ -302,19 +315,7 @@ input[type="file"] {
     border-image: linear-gradient(to right, #caf0f8, #fec5bb) 1;
     
   }
-  .form-container{
   
-    padding-top: 20%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .login-form, .signup-form{
-    
-    margin-bottom: 10%;
-    margin-top: 5%;
-  }
   #urlbox{
     margin-bottom: 1%;
   }

@@ -172,11 +172,7 @@ router.get('/signup', (req, res) => {
     return;
   }
 
-<<<<<<< HEAD
-  res.render('signUp');
-=======
   res.render('signup');
->>>>>>> dbd43955fdf98e577c19b6cafac670085f9a0830
 });
 
 module.exports = router;
