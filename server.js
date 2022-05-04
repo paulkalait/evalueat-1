@@ -6,7 +6,9 @@ const c = require('ansi-colors');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+//ansi-color
+console.log(c.red("this is a red string"))
+//
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -36,5 +38,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/'));
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log(c.green.bold('Now listening')));
 });
