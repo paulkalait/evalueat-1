@@ -21,7 +21,7 @@ Post.init(
       allowNull: false,
     },
     image_name: {
-     type: DataTypes.STRING,
+     type: DataTypes.BLOB,
      allowNull: false
     },
     user_id: {
