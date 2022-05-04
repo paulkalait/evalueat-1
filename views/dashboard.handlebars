@@ -4,21 +4,21 @@
   {{!-- second formn for image --}}
   <form method="POST" action="/upload" enctype="multipart/form-data">
    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <label for="post-title"></label>
+      <input type="text" id="post-title" name="post-title" placeholder="Title"/>
     </div>
 
-
+ <label id="add-photo" style="padding-bottom: 2%;">
+       <input type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"/>
+    Add Photo   <i class="fa fa-upload" style="font-size:18px;"></i>
+    </label>
   {{!-- insert input file ends --}}
     <div>
-      <label for="post-text">Text</label>
+      <label for="post-text"></label>
       <textarea name="post-text" id="post-text" cols="30" rows="10" placeholder="Say Anything..."></textarea>
     </div>
-    <label style="padding-bottom: 2%;">
-       <input type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"/>
-    Add Photo  <i class="fa fa-upload" style="font-size:18px;"></i>
-    </label>
-    </label>
+   
+    {{!-- </label> --}}
     {{!-- display the image that was uploaded dynamically --}}
     <div style="width: 100px; height: 100px; display: none; ">
       <img id="output" style="width:100%; object-fit: cover"src="/images/{{image_name}}"/>
@@ -29,15 +29,15 @@
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol>
+  <h2 "padding-top: 1%;">Your Posts</h2>
+  <div>
     {{#each posts as |post|}}
-    <li>
+    <div>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+    </div>
     {{/each}}
-  </ol>
+  </div>
 </section>
 {{/if}}
 <script src="/javascript/add-image.js"></script>

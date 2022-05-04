@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>evalueat </title>
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2bd04f5e1d.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -22,8 +25,8 @@
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">add post +</span></a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard">add post <i class="fa-solid fa-plus"></i></span></a>
+        <button id="logout" class="btn-no-style">logout  <i class="fa fa-sign-out" style="font-size:14px"></i></button>
         {{else}}
         | <a href="/login">login</a>
           
@@ -34,24 +37,11 @@
       {{{ body }}}
     </main>
     <footer class = "footer-container">
-        {{!-- <div class = "thanks-message"
-          <p> Thanks for visiting!</p>
-        </div> --}}
-      <div class = "links-container">
-        <div class = "homepage">
-          <a href="/login"><i class="fa fa-home" style: "font-size:48px; color:black"></i></a>
-        </div>
-        <div class = "add-post">
-         <a href="/homepage">Add Post</a>
-        </div>
-        <div class = "logout">
-         <a href="/homepage">LOGOUT</a>
-        </div>
-      </div>
-
-
+        <div class = "thanks-message">
+          <p> Thanks for visiting! <i class="fa-solid fa-burger"></i></p>
+           </div>
     </footer>
-  </div>
+ 
   
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
