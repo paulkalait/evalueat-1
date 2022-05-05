@@ -7,7 +7,7 @@ const path = require("path")
 const { findAll } = require('../models/Post');
 
 const upload = multer({
-  dest: "../public/images"
+  dest: path.join(__dirname, "../public/images")
 })
 
 router.post(
