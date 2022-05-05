@@ -96,16 +96,17 @@
     font-family: 'Roboto', sans-serif;
     width: 100%;
     font-size: 3.00vh;
-    
   }
   #login-btn, #signup-btn{
     width: 100%;
     padding-top: 2%;
-    margin-top: 1.5%;
+    margin-top: 5.5%;
     padding-bottom: 2%;
     font-size: 3.00vh;
     border-radius: 5%;
+    
   }
+ 
 
   #comment-body{
     width: 50%;
@@ -313,11 +314,24 @@ input[type="file"] {
     margin-bottom: 10%;
     margin-top: 5%;
     width: 50%;
-   
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 5% 5% 10% 5%;
     border-radius: 5%;
   }
+
+  .login-form > h2{
+    font-family:'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 5.00vh;
+  }
+
+ #create-account{
+    font-family:'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 4.00vh;
+  }
+
+
   #urlbox{
     margin-bottom: 1%;
   }
