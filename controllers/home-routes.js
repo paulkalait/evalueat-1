@@ -19,7 +19,7 @@ router.post(
     // console.log(tempPath)
     const targetPath = path.join(__dirname, `../public/images/${req.file.originalname}`)
     // console.log(req.file.originalname)
-    if(path.extname(req.file.originalname).toLowerCase() === ".png"){
+    if(path.extname(req.file.originalname).toLowerCase() === ".png" || ".jpeg" || ".gif" ){
       // fs.rename(tempPath, targetPath, err => {
       //   console.log(targetPath)
       //   if(err) return handleError(err, res)

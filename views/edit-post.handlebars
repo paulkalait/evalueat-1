@@ -6,6 +6,16 @@
   <form class="edit-post-form">
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
+
+      {{!-- insert photo --}}
+       <label id="add-photo" style="padding-bottom: 2%;">
+       <input type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"/>
+    Add Photo   <i class="fa fa-upload" style="font-size:18px;"></i>
+    </label>
+    <div style="width: 100px; height: 100px; display: none; ">
+      <img id="output" style="width:100%; object-fit: cover"src="/images/{{image_name}}"/>
+    </div>
+    {{!-- photo ends --}}
       <textarea id="edit-postext">({{post.post_text}})</textarea>
     </div>
     <div>
