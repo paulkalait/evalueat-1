@@ -3,10 +3,11 @@ async function editFormHandler(event) {
 
   const title = document.querySelector('input[name="post-title"]').value.trim();
   const post_text = document.getElementById('edit-postext').value;
-  const image_name = document.getElementById('output').value;
+  const image_name = document.getElementById('output').getAttribute('src');
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
+  console.log(image_name)
   const response = await fetch(`/api/posts/${id}`, {
     method: 'PUT',
     body: JSON.stringify({
@@ -18,6 +19,7 @@ async function editFormHandler(event) {
       'Content-Type': 'application/json'
     }
   });
+  console.log(response, "post info")
 
   if (response.ok) {
     document.location.replace('/dashboard/');
